@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Colors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+    body {
+      background-image: url(asd.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+<body>
+            <div class="w3-center w3-padding-64" style="font-size:20px"><span class="w3-tag w3-wide">Colors</span></div>
+            
+            <div class="w3-center">
+                <span class="w3-text-white" style="font-size:20px">We connect comes with varieties of colors. There are four (4) colors for you to choose from. </p>
+                    <p> We have the We Connect Gold, Silver, Blue and Navy Blue.</span>
+              </div>
+
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-center w3-display-container mySlides">
+  <img src="ergef.png" style="width:32%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Gold
+  </div>
+</div>
+
+<div class="w3-center w3-display-container mySlides">
+  <img src="ddeviec.png" style="width:32%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Navy Blue
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="sd.png" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Other Colors
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
